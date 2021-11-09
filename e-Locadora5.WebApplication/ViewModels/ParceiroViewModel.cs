@@ -14,14 +14,14 @@ namespace e_Locadora5.WebApplication.ViewModels
         {
             public int Id { get; set; }
 
-            public string nome { get; set; }
+            public string Nome { get; set; }
         }
 
         public class ParceiroIndexViewModel : ITituloViewModel
         {
             public string Titulo => "Parceiro";
 
-            public List<ParceiroIndexViewModel> registros { get; set; }
+            public List<ParceiroListViewModel> Registros { get; set; }
 
 
         }

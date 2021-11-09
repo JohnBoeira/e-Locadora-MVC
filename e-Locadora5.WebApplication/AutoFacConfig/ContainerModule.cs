@@ -18,6 +18,8 @@ namespace e_Locadora5.WebApplication.AutoFacConfig
             builder.RegisterType<ParceiroOrmDAO>().As<IParceiroRepository>();
 
             builder.RegisterType<Mapper>().As<IMapper>();
+
+            //builder.RegisterType<>
         }
 
     }

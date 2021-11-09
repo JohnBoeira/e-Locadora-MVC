@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - e_Locadora5.WebApplication</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/font-awesome/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -32,7 +33,12 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+            @await RenderSectionAsync("Header", required: false)
+
+            <div class="container">
+                @RenderBody()
+            </div>
+
         </main>
     </div>
 

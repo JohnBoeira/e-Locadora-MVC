@@ -24,7 +24,7 @@ namespace e_Locadora5.WebApplication.AutoMapperConfig
 
         private void ConfigurarConversaoDeDominioParaVM()
         {
-            CreateMap<List<Parceiro>, ParceiroIndexViewModel>().ForMember(dest => dest.registros, opt => opt.MapFrom(a => a));
+            CreateMap<List<Parceiro>, ParceiroIndexViewModel>().ForMember(dest => dest.Registros, opt => opt.MapFrom(a => a));
             
             CreateMap<Parceiro, ParceiroEditViewModel>();
             CreateMap<Parceiro, ParceiroDeleteViewModel>();
