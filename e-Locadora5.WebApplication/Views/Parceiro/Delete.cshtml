@@ -1,0 +1,16 @@
+﻿@model e_Locadora5.WebApplication.ViewModels.ParceiroViewModel.ParceiroDeleteViewModel
+
+@section Header {
+
+    @{await Html.RenderPartialAsync("_Header");}
+}
+
+<div>
+    <partial name="_Info" model="Model" />
+
+        <form asp-action="Delete">
+            <input type="submit" value="Excluir" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-info">Voltar para a Lista</a>
+        </form>
+  
+</div>
