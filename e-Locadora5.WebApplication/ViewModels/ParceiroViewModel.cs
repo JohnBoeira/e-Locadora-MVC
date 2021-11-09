@@ -19,7 +19,7 @@ namespace e_Locadora5.WebApplication.ViewModels
 
         public class ParceiroIndexViewModel : ITituloViewModel
         {
-            public string Titulo => "";
+            public string Titulo => "Parceiro";
 
             public List<ParceiroIndexViewModel> registros { get; set; }
 
